@@ -1,3 +1,6 @@
 #This file lists unresolved issues for the java-infrastucture project
 
 * A better way of tracking issues needs to be found.
+* There is no Javadoc in the source, and no way to easily produce this.
+* The output of the class is not internationalised.
+* The class must be recompiled to edit the strings it uses.
