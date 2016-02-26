@@ -7,3 +7,7 @@ and at the end I’ll have a good base to work from with my own future projects.
 
 The blog series discussing this can be found here:
 http://jamesburt.me.uk/infrastructure/java-infrastructure-part-0-the-long-way/
+
+## Build environment
+
+This project is currently being built against Ubuntu 14.04 using Java 1.8.0_72
