@@ -4,4 +4,5 @@
 * There is no Javadoc in the source, and no way to easily produce this.
 * The output of the class is not internationalised.
 * The class must be recompiled to edit the strings it uses.
-* Work out how to maintain and enforce a consistent build environment and tools
+* Work out how to maintain and enforce a consistent build environment and tools (ie Java and gradle)
+* Find a way to show that the gradle distribution used by the wrapper is trustworthy

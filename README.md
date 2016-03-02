@@ -10,4 +10,5 @@ http://jamesburt.me.uk/infrastructure/java-infrastructure-part-0-the-long-way/
 
 ## Build environment
 
-This project is currently being built against Ubuntu 14.04 using Java 1.8.0_72
+This project is currently being built against Ubuntu 14.04 using Java 1.8.0_72. It uses gradle v2.11 via 
+the gradle wrapper.
