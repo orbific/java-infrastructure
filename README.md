@@ -12,3 +12,7 @@ http://jamesburt.me.uk/infrastructure/java-infrastructure-part-0-the-long-way/
 
 This project is currently being built against Ubuntu 14.04 using Java 1.8.0_72. It uses gradle v2.11 via 
 the gradle wrapper.
+
+## Jenkins
+
+The project uses a Jenkins instance for continuous integration. The configuration for this is stored within git. When setting up Jenkins, the latest version of the server can be downloaded from http://mirrors.jenkins-ci.org/war/latest/jenkins.war. You will need to set a JENKINS_HOME directory to specify the directory where Jenkins stores its configurations and data.
