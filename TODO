@@ -7,3 +7,4 @@
 * Work out how to maintain and enforce a consistent build environment and tools (ie Java and gradle)
 * Find a way to show that the gradle distribution used by the wrapper is trustworthy
 * Check that Jenkins can be deployed and restored from the items in the repository
+* Make sure that gradle dependencies are brought in securely - consider using Nexus to make this more efficient too
