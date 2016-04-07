@@ -5,6 +5,10 @@ repositories {
     mavenCentral()
 }
 
+jacoco {
+        toolVersion = "0.7.5+"
+}
+
 dependencies {
   testCompile 'junit:junit:4.12'
 }
