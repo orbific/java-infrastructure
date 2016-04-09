@@ -8,3 +8,5 @@
 * Find a way to show that the gradle distribution used by the wrapper is trustworthy
 * Check that Jenkins can be deployed and restored from the items in the repository
 * Make sure that gradle dependencies are brought in securely - consider using Nexus to make this more efficient too
+* Split the coverage into a different build to the unit testing
+* The gradle version is restricted due to compatibility with the Jenkins plugin
