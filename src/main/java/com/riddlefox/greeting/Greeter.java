@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 @RestController
-@EnableAutoConfiguration
+@SpringBootApplication
 public class Greeter extends SpringBootServletInitializer {
 
 	@RequestMapping("/")
