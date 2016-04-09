@@ -20,7 +20,7 @@ public class GreeterTest {
    {
       Greeter greeter = new Greeter();
       String response = greeter.greet(null);
-      assertEquals("String should be as expected", "Hello World", response);
+      assertEquals("String should be as expected", "Hello James", response);
    }
 
 }

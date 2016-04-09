@@ -13,7 +13,7 @@ public class Greeter extends SpringBootServletInitializer {
 	@RequestMapping("/")
     public static String greet(String name) {
     	if(name==null) {
-    		return "Hello World";
+    		return "Hello James";
     	}
         return "Hello " + name;
     }
