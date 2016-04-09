@@ -4,10 +4,11 @@ import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 @RestController
 @EnableAutoConfiguration
-public class Greeter {
+public class Greeter extends SpringBootServletInitializer {
 
 	@RequestMapping("/")
     public static String greet(String name) {
