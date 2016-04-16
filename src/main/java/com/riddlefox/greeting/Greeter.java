@@ -15,12 +15,20 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.PollableChannel;
+import org.springframework.web.WebApplicationInitializer;
+import javax.servlet.ServletContext;
+import org.springframework.web.servlet.DispatcherServlet;
+import javax.servlet.ServletException;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.ContextLoaderListener;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import javax.servlet.ServletRegistration;
  
 import com.rometools.rome.feed.synd.SyndEntry;
 
 @Controller
 @SpringBootApplication
-public class Greeter extends SpringBootServletInitializer {
+public class Greeter extends SpringBootServletInitializer implements WebApplicationInitializer {
 
 	private Log log = LogFactory.getLog(Greeter.class);
 
@@ -96,4 +104,14 @@ public class Greeter extends SpringBootServletInitializer {
             }
         }
     }
+    
+    @Override
+    public void onStartup(ServletContext servletContext) throws ServletException {
+        WebApplicationContext context = new AnnotationConfigWebApplicationContext();
+        servletContext.addListener(new ContextLoaderListener(context));
+        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
+        dispatcher.setLoadOnStartup(1);
+        dispatcher.addMapping("/*");
+    }	    
+    
 }
