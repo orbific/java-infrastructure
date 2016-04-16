@@ -7,6 +7,7 @@ import org.junit.Test;
 // This is named to make it easier to see in lists
 public class GreeterTest { 
 	
+	/*
    @Test
    public void testHelloWorld() 
    {
@@ -22,5 +23,5 @@ public class GreeterTest {
       String response = greeter.greet(null);
       assertEquals("String should be as expected", "Hello James", response);
    }
-
+*/
 }
